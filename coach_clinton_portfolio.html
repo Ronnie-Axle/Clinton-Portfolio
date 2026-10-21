@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Coach Clinton | Professional Swimming Teacher & Aquatic Specialist
+    </title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cinzel & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              cinzel: ["Cinzel", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              darkBg: "#050505",
+              darkCard: "#080808",
+              accentOrange: "#f97316",
+            },
+            animation: {
+              marquee: "marquee 40s linear infinite",
+              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              marquee: {
+                "0%": { transform: "translateX(0%)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Custom Thin Stone Scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0c0a09;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #44403c;
+        border-radius: 2px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f97316;
+      }
+
+      /* Hide Scrollbar Utility */
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Smooth Parallax Fix */
+      .bg-fixed-parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Card Glow Filter */
+      .glow-effect {
+        box-shadow: 0 0 50px -10px rgba(249, 115, 22, 0.15);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#050505] text-stone-300 font-sans antialiased selection:bg-orange-900/40 selection:text-orange-200 min-h-screen flex flex-col justify-between overflow-x-hidden"
+  >
+    <!-- FIXED NAVIGATION BAR (Mix-Blend-Difference) -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 sm:px-12 py-6 flex justify-between items-center transition-all duration-300"
+    >
+      <a
+        href="#"
+        class="font-cinzel text-xl sm:text-2xl font-bold tracking-widest text-white uppercase hover:text-orange-500 transition-colors"
+      >
+        CLINTON<span class="text-orange-500">.</span>
+      </a>
+
+      <div
+        class="hidden md:flex items-center space-x-8 text-xs font-medium uppercase tracking-widest text-stone-300"
+      >
+        <a href="#about" class="hover:text-orange-500 transition-colors"
+          >Philosophy</a
+        >
+        <a href="#drills" class="hover:text-orange-500 transition-colors"
+          >Strokes & Drills</a
+        >
+        <a href="#benefits" class="hover:text-orange-500 transition-colors"
+          >Benefits</a
+        >
+        <a href="#programs" class="hover:text-orange-500 transition-colors"
+          >Programs</a
+        >
+        <a href="#contact" class="hover:text-orange-500 transition-colors"
+          >Contact</a
+        >
+      </div>
+
+      <a
+        href="tel:0775342814"
+        class="inline-flex items-center space-x-2 border border-stone-700 hover:border-orange-500 px-4 py-2 rounded-full text-xs tracking-wider uppercase transition-all duration-300 text-white hover:bg-orange-500 hover:text-black"
+      >
+        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+        <span>0775342814</span>
+      </a>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section
+      class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 px-6 sm:px-12 overflow-hidden bg-[#050505]"
+    >
+      <!-- Ambient Glowing Background Blobs -->
+      <div
+        class="absolute top-1/4 right-10 w-96 h-96 bg-orange-600/10 rounded-full blur-[140px] pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-10 left-10 w-80 h-80 bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto z-10 pt-8"
+      >
+        <!-- Left Hero Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <div
+            class="inline-flex items-center space-x-3 bg-stone-900/80 border border-stone-800 px-4 py-1.5 rounded-full"
+          >
+            <span class="relative flex h-2.5 w-2.5">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"
+              ></span>
+            </span>
+            <span
+              class="text-xs uppercase tracking-widest text-stone-400 font-medium"
+              >Est. 1998 • Professional Aquatic Coach</span
+            >
+          </div>
+
+          <h1
+            class="font-cinzel text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-stone-100 leading-[0.95]"
+          >
+            COACH <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-stone-100 via-stone-300 to-orange-500"
+              >CLINTON</span
+            >
+          </h1>
+
+          <p
+            class="text-stone-400 text-lg sm:text-xl font-light max-w-xl leading-relaxed"
+          >
+            "Healthier Body • Stronger Mind • Better You"
+          </p>
+
+          <p class="text-stone-500 text-sm max-w-lg leading-relaxed">
+            Empowerment through elite swimming instruction. Dedicated to
+            transforming fear into confidence, refining competitive technique,
+            and unlocking peak physical wellness.
+          </p>
+
+          <div class="pt-4 flex flex-wrap gap-4 items-center">
+            <a
+              href="tel:0775342814"
+              class="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-black font-semibold text-sm uppercase tracking-wider rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-orange-500/20 flex items-center space-x-3"
+            >
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Book A Session Today</span>
+            </a>
+            <a
+              href="#drills"
+              class="px-8 py-4 border border-stone-800 hover:border-stone-600 text-stone-300 font-medium text-sm uppercase tracking-wider rounded-full transition-all duration-300 hover:bg-stone-900/50"
+            >
+              Explore Disciplines
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Image Frame -->
+        <div class="lg:col-span-5 relative">
+          <div
+            class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-stone-800 bg-stone-900/40 p-2 group shadow-2xl"
+          >
+            <div class="relative overflow-hidden rounded-xl aspect-[3/4]">
+              <!-- Primary Image: Coach Clinton in Pool -->
+              <img
+                src="input_file_0.png"
+                alt="Coach Clinton Swimming Coach"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1200&auto=format&fit=crop';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-6 left-6 right-6">
+                <span
+                  class="text-orange-500 font-mono text-xs uppercase tracking-widest block mb-1"
+                  >Head Swimming Teacher</span
+                >
+                <p class="font-cinzel text-xl text-stone-100 font-bold">
+                  Coach Clinton
+                </p>
+                <p class="text-xs text-stone-400 mt-1">
+                  Specialized in Youth, Adult Technique & Life-Saving Aquatic
+                  Skills
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="pt-8 flex justify-between items-end border-t border-stone-900 text-xs text-stone-600 font-mono"
+      >
+        <div class="flex items-center space-x-2">
+          <i data-lucide="waves" class="w-4 h-4 text-orange-500"></i>
+          <span>AQUATIC EXCELLENCE ACADEMY</span>
+        </div>
+        <div class="hidden sm:block">
+          <span>SCROLL TO DISCOVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MARQUEE -->
+    <section
+      class="py-6 bg-[#050505] border-y border-stone-900/80 overflow-hidden select-none"
+    >
+      <div class="flex whitespace-nowrap animate-marquee">
+        <!-- Loop items twice for infinite effect -->
+        <div
+          class="flex items-center space-x-12 mx-6 font-cinzel text-lg sm:text-2xl tracking-[0.2em] text-stone-500 font-medium uppercase"
+        >
+          <span>FREESTYLE</span> <span class="text-orange-500">•</span>
+          <span>BREASTSTROKE</span> <span class="text-orange-500">•</span>
+          <span>BACKSTROKE</span> <span class="text-orange-500">•</span>
+          <span>KICKBOARD DRILLS</span> <span class="text-orange-500">•</span>
+          <span>HYDROTHERAPY</span> <span class="text-orange-500">•</span>
+          <span>ENDURANCE TRAINING</span> <span class="text-orange-500">•</span>
+          <span>CHILD & ADULT SESSIONS</span>
+          <span class="text-orange-500">•</span>
+        </div>
+        <div
+          class="flex items-center space-x-12 mx-6 font-cinzel text-lg sm:text-2xl tracking-[0.2em] text-stone-500 font-medium uppercase"
+        >
+          <span>FREESTYLE</span> <span class="text-orange-500">•</span>
+          <span>BREASTSTROKE</span> <span class="text-orange-500">•</span>
+          <span>BACKSTROKE</span> <span class="text-orange-500">•</span>
+          <span>KICKBOARD DRILLS</span> <span class="text-orange-500">•</span>
+          <span>HYDROTHERAPY</span> <span class="text-orange-500">•</span>
+          <span>ENDURANCE TRAINING</span> <span class="text-orange-500">•</span>
+          <span>CHILD & ADULT SESSIONS</span>
+          <span class="text-orange-500">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PORTFOLIO / STROKES & DRILLS (Sticky Sidebar Layout) -->
+    <section
+      id="drills"
+      class="bg-[#080808] py-24 px-6 sm:px-12 border-b border-stone-900"
+    >
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+        <!-- Sticky Sidebar -->
+        <div class="lg:w-1/3">
+          <div class="lg:sticky lg:top-32 space-y-8">
+            <div>
+              <span
+                class="text-orange-500 text-xs font-mono uppercase tracking-widest block mb-2"
+                >// Core Training Modules</span
+              >
+              <h2
+                class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100 leading-tight"
+              >
+                BUILT FOR LIFE.
+              </h2>
+            </div>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Every stroke is meticulously analyzed and refined. From
+              foundational water safety for beginners to advanced competitive
+              bio-mechanics.
+            </p>
+
+            <div class="space-y-3 pt-4 border-t border-stone-900">
+              <div
+                class="flex justify-between items-center text-xs font-mono text-stone-500 py-2 border-b border-stone-900/60"
+              >
+                <span>01 / KICKBOARD DRILLS</span>
+                <span class="text-orange-500">STAMINA & CORE</span>
+              </div>
+              <div
+                class="flex justify-between items-center text-xs font-mono text-stone-500 py-2 border-b border-stone-900/60"
+              >
+                <span>02 / FREESTYLE</span>
+                <span class="text-orange-500">SPEED & TECHNIQUE</span>
+              </div>
+              <div
+                class="flex justify-between items-center text-xs font-mono text-stone-500 py-2 border-b border-stone-900/60"
+              >
+                <span>03 / BREASTSTROKE</span>
+                <span class="text-orange-500">CONTROL & POWER</span>
+              </div>
+              <div
+                class="flex justify-between items-center text-xs font-mono text-stone-500 py-2 border-b border-stone-900/60"
+              >
+                <span>04 / BACKSTROKE</span>
+                <span class="text-orange-500">POSTURE & MOBILITY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable Content Stack -->
+        <div class="lg:w-2/3 space-y-16">
+          <!-- Drill 1 -->
+          <div
+            class="group relative rounded-2xl overflow-hidden border border-stone-800/80 bg-stone-900/20 p-4 transition-all duration-500 hover:border-orange-500/50"
+          >
+            <div
+              class="relative aspect-[16/9] overflow-hidden rounded-xl bg-stone-950"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?q=80&w=1200&auto=format&fit=crop"
+                alt="Kickboard Drills"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+              <div
+                class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-xs font-mono text-orange-400"
+              >
+                Module 01
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3
+                class="font-cinzel text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors"
+              >
+                KICKBOARD DRILLS
+              </h3>
+              <p class="text-stone-400 text-sm leading-relaxed">
+                Focuses on lower body conditioning, kick alignment, and leg
+                endurance. Builds fundamental kicking power and strengthens the
+                core foundation required for all competitive strokes.
+              </p>
+              <div
+                class="pt-2 flex items-center space-x-2 text-xs font-mono text-stone-500"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-4 h-4 text-orange-500"
+                ></i>
+                <span
+                  >Builds technique, kicking power, and core endurance.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Drill 2 -->
+          <div
+            class="group relative rounded-2xl overflow-hidden border border-stone-800/80 bg-stone-900/20 p-4 transition-all duration-500 hover:border-orange-500/50"
+          >
+            <div
+              class="relative aspect-[16/9] overflow-hidden rounded-xl bg-stone-950"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1200&auto=format&fit=crop"
+                alt="Freestyle Swimming"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+              <div
+                class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-xs font-mono text-orange-400"
+              >
+                Module 02
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3
+                class="font-cinzel text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors"
+              >
+                FREESTYLE (FRONT CRAWL)
+              </h3>
+              <p class="text-stone-400 text-sm leading-relaxed">
+                Master high-elbow catch, continuous rhythmic kicking, and
+                efficient bilateral breathing. Designed for maximum speed and
+                hydrodynamic efficiency in the water.
+              </p>
+              <div
+                class="pt-2 flex items-center space-x-2 text-xs font-mono text-stone-500"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-4 h-4 text-orange-500"
+                ></i>
+                <span
+                  >Improves speed, strength, and cardiovascular stamina.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Drill 3 -->
+          <div
+            class="group relative rounded-2xl overflow-hidden border border-stone-800/80 bg-stone-900/20 p-4 transition-all duration-500 hover:border-orange-500/50"
+          >
+            <div
+              class="relative aspect-[16/9] overflow-hidden rounded-xl bg-stone-950"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?q=80&w=1200&auto=format&fit=crop"
+                alt="Breaststroke Coaching"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+              <div
+                class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-xs font-mono text-orange-400"
+              >
+                Module 03
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3
+                class="font-cinzel text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors"
+              >
+                BREASTSTROKE
+              </h3>
+              <p class="text-stone-400 text-sm leading-relaxed">
+                Develop synchronized arm pulls and frog kicks with proper glide
+                timing. Excellent for building upper body control, leg
+                coordination, and breath control.
+              </p>
+              <div
+                class="pt-2 flex items-center space-x-2 text-xs font-mono text-stone-500"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-4 h-4 text-orange-500"
+                ></i>
+                <span>Builds control, upper body strength, and balance.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drill 4 -->
+          <div
+            class="group relative rounded-2xl overflow-hidden border border-stone-800/80 bg-stone-900/20 p-4 transition-all duration-500 hover:border-orange-500/50"
+          >
+            <div
+              class="relative aspect-[16/9] overflow-hidden rounded-xl bg-stone-950"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5XWAhXZZ4cl1I4dX7Mr3cKfTra46JIwIewc5Wum3GQ&s=10"
+                alt="Backstroke Drill"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+              <div
+                class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-xs font-mono text-orange-400"
+              >
+                Module 04
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3
+                class="font-cinzel text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors"
+              >
+                BACKSTROKE
+              </h3>
+              <p class="text-stone-400 text-sm leading-relaxed">
+                Emphasizes relaxed supine body position, full shoulder rotation,
+                and continuous flutter kicking. Ideal for improving posture,
+                shoulder mobility, and spinal alignment.
+              </p>
+              <div
+                class="pt-2 flex items-center space-x-2 text-xs font-mono text-stone-500"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-4 h-4 text-orange-500"
+                ></i>
+                <span>Improves posture, spine alignment, and flexibility.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: HEALTH BENEFITS (Horizontal Snap Carousel) -->
+    <section id="benefits" class="py-24 bg-[#050505] border-b border-stone-900">
+      <div
+        class="max-w-7xl mx-auto px-6 sm:px-12 mb-12 flex flex-col md:flex-row md:items-end justify-between"
+      >
+        <div>
+          <span
+            class="text-orange-500 text-xs font-mono uppercase tracking-widest block mb-2"
+            >// Why Swimming Is Good For You</span
+          >
+          <h2 class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100">
+            HEALTH BENEFITS
+          </h2>
+        </div>
+        <p class="text-stone-500 text-xs font-mono mt-4 md:mt-0">
+          SWIPE OR SCROLL HORIZONTALLY &rarr;
+        </p>
+      </div>
+
+      <!-- Snap Container -->
+      <div
+        class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar space-x-6 px-6 sm:px-12 pb-8"
+      >
+        <!-- Benefit 1 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-500 mb-6"
+            >
+              <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 01</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Improves Heart Health
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Strengthens your cardiovascular system, lowers blood pressure, and
+              dramatically improves systemic circulation through low-impact
+              aerobic exercise.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6"
+            >
+              <i data-lucide="wind" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 02</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Builds Lung Capacity
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Controlled breathing techniques train your lungs to process oxygen
+              efficiently, expanding pulmonary capacity and breathing stamina.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6"
+            >
+              <i data-lucide="dumbbell" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 03</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Tones Your Muscles
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Water provides 12x the resistance of air. Works every major muscle
+              group simultaneously to build lean, balanced functional strength.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6"
+            >
+              <i data-lucide="scale" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 04</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Weight Management
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Burns significant calories while keeping metabolic rate elevated.
+              An ideal high-calorie burning activity for long-term health and
+              fitness.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-6"
+            >
+              <i data-lucide="brain" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 05</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Reduces Stress
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              The rhythmic nature of aquatic movement releases endorphins,
+              reduces anxiety, boosts mental clarity, and relaxes mind and body.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6"
+            >
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 06</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Flexibility & Joint Health
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Zero impact on joints. Water buoyancy relieves pressure on bones
+              while active strokes expand joint range of motion and mobility.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 7 -->
+        <div
+          class="snap-center shrink-0 w-80 sm:w-96 rounded-2xl bg-stone-900/30 border border-stone-800 p-8 flex flex-col justify-between hover:border-orange-500/50 transition-all duration-300"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6"
+            >
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono text-stone-500 uppercase"
+              >Benefit 07</span
+            >
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mt-2 mb-3">
+              Builds Confidence
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              Overcoming fear of deep water builds resilience, personal
+              discipline, focus, and essential life-saving aquatic confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PARALLAX BREAK & PHILOSOPHY -->
+    <section id="about" class="relative py-32 bg-[#050505]">
+      <!-- Parallax Container -->
+      <div
+        class="relative h-[60vh] bg-fixed-parallax flex items-center justify-center overflow-hidden"
+        style="background-image: url(&quot;/assets/clinton.jpg&quot;)"
+      >
+        <div class="absolute inset-0 bg-black/75"></div>
+
+        <div class="relative z-10 text-center max-w-4xl px-6">
+          <span
+            class="text-orange-500 font-mono text-xs uppercase tracking-widest block mb-4"
+            >// Coaching Philosophy</span
+          >
+          <blockquote
+            class="font-cinzel text-3xl sm:text-5xl font-bold text-stone-100 leading-tight"
+          >
+            "Swim Today... <br />
+            For a Healthier Tomorrow."
+          </blockquote>
+          <p class="mt-6 text-stone-400 text-sm sm:text-base max-w-xl mx-auto">
+            A holistic approach to swimming that combines biomechanical
+            efficiency, mental calm, and sustainable fitness progression.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 -mt-16 relative z-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-stone-900/90 backdrop-blur-xl border border-stone-800 rounded-2xl p-8 shadow-2xl"
+        >
+          <div
+            class="text-center p-4 border-b md:border-b-0 md:border-r border-stone-800"
+          >
+            <span
+              class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100"
+              >100%</span
+            >
+            <p class="text-xs font-mono text-orange-500 uppercase mt-2">
+              Safety Focus & Care
+            </p>
+          </div>
+          <div
+            class="text-center p-4 border-b md:border-b-0 md:border-r border-stone-800"
+          >
+            <span
+              class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100"
+              >1000+</span
+            >
+            <p class="text-xs font-mono text-orange-500 uppercase mt-2">
+              Swimmers Trained
+            </p>
+          </div>
+          <div class="text-center p-4">
+            <span
+              class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100"
+              >ALL</span
+            >
+            <p class="text-xs font-mono text-orange-500 uppercase mt-2">
+              Ages & Skill Levels
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PROGRAM VENTURES / PACKAGES -->
+    <section id="programs" class="py-24 bg-[#080808] border-t border-stone-900">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-orange-500 text-xs font-mono uppercase tracking-widest block mb-2"
+            >// Tailored Offerings</span
+          >
+          <h2 class="font-cinzel text-4xl sm:text-5xl font-bold text-stone-100">
+            COACHING PROGRAMS
+          </h2>
+          <p class="text-stone-400 text-sm mt-4">
+            Personalized training structures built around your goals, schedule,
+            and current swimming proficiency.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="life-buoy" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Water Confidence
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              Designed for total beginners or adults/children anxious around
+              water. Gentle, supportive immersion techniques that build trust
+              and calm control.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Floating & Water Orientation</li>
+              <li>• Breath Control Drills</li>
+              <li>• Deep Water Comfort</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Technique Mastery
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              Stroke correction and biomechanical refinement for freestyle,
+              breaststroke, and backstroke to reduce resistance and maximize
+              gliding efficiency.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Video/Visual Analysis</li>
+              <li>• Hydrodynamic Stroke Catch</li>
+              <li>• Rhythm & Breathing Timing</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Private & Group Sessions
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              One-on-one private lessons for rapid progression, or small
+              family/group sessions tailored to shared fitness objectives.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Flexible Scheduling</li>
+              <li>• Customized Pace</li>
+              <li>• Focused Individual Attention</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="flame" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Aquatic Weight Loss
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              High-energy aquatic workout routines that blend kickboard drills
+              with continuous interval swimming for targeted calorie burn and
+              body toning.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Low Impact Cardio</li>
+              <li>• Full Body Conditioning</li>
+              <li>• Fat-Loss Interval Sets</li>
+            </ul>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="smile" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Kids Swimming Academy
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              Fun, engaging, and disciplined aquatic education for toddlers and
+              youngsters. Instills life-saving water safety habits early in
+              life.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Safety Skills First</li>
+              <li>• Play-Based Learning</li>
+              <li>• Progressive Badge Milestones</li>
+            </ul>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-stone-900/20 border border-stone-800/80 rounded-2xl p-8 hover:border-orange-500/50 transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i data-lucide="activity-square" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-cinzel text-xl font-bold text-stone-100 mb-3">
+              Hydrotherapy & Rehab
+            </h3>
+            <p class="text-stone-400 text-sm leading-relaxed mb-6">
+              Gentle water movements for injury rehabilitation, joint pain
+              relief, and post-surgery mobility under guided swim supervision.
+            </p>
+            <ul class="text-xs text-stone-500 space-y-2 font-mono">
+              <li>• Zero Impact Exercises</li>
+              <li>• Joint Relief Focus</li>
+              <li>• Restorative Water Workouts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: BENTO BANNERS & DIRECT CONTACT -->
+    <section id="contact" class="py-24 bg-[#050505] border-t border-stone-900">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <!-- Flyer Media Card (Bento Large) -->
+          <div
+            class="lg:col-span-7 bg-stone-900/40 border border-stone-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between overflow-hidden relative group"
+          >
+            <!-- Background Flyer Display -->
+            <div
+              class="relative w-full aspect-[4/5] sm:aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800"
+            >
+              <img
+                src="input_file_1.png"
+                alt="Coach Clinton Swimming Exercise Flyer"
+                class="w-full h-full object-cover transition-all duration-1000 transform group-hover:scale-102"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1519315901367-f34ff9154487?q=80&w=1200&auto=format&fit=crop';
+                "
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+              ></div>
+            </div>
+
+            <div class="mt-6">
+              <span
+                class="text-orange-500 font-mono text-xs uppercase tracking-widest block mb-1"
+                >Official Coaching Flyer</span
+              >
+              <h3 class="font-cinzel text-2xl font-bold text-stone-100">
+                Swimming Exercise Benefits & Programs
+              </h3>
+              <p class="text-stone-400 text-sm mt-2">
+                Comprehensive swimming lessons designed for individuals,
+                families, and competitive athletes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Direct Call & Booking Card (Bento Small) -->
+          <div
+            class="lg:col-span-5 bg-gradient-to-br from-stone-900/90 to-stone-950 border border-stone-800 rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden"
+          >
+            <div class="space-y-6">
+              <div
+                class="inline-flex items-center space-x-2 bg-orange-500/10 border border-orange-500/30 px-3 py-1 rounded-full text-xs font-mono text-orange-400"
+              >
+                <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+                <span>DIRECT LINE</span>
+              </div>
+
+              <h3 class="font-cinzel text-3xl font-bold text-stone-100">
+                READY TO START SWIMMING?
+              </h3>
+
+              <p class="text-stone-400 text-sm leading-relaxed">
+                Call Coach Clinton directly to discuss your goals, schedule a
+                private consultation, or enroll in upcoming swimming batches.
+              </p>
+
+              <!-- Contact Highlight Box -->
+              <div
+                class="p-6 bg-stone-950 rounded-2xl border border-stone-800 space-y-4"
+              >
+                <span class="text-xs font-mono text-stone-500 uppercase block"
+                  >Phone / WhatsApp</span
+                >
+                <a
+                  href="tel:0775342814"
+                  class="font-cinzel text-3xl font-bold text-orange-500 hover:text-orange-400 transition-colors block"
+                >
+                  0775342814
+                </a>
+                <p class="text-xs text-stone-400">
+                  Direct Phone & WhatsApp Support Available Daily.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA Action -->
+            <div class="pt-8 space-y-3">
+              <a
+                href="tel:0775342814"
+                class="w-full py-4 bg-orange-500 hover:bg-orange-600 text-black font-semibold text-center text-sm uppercase tracking-wider rounded-full transition-all duration-300 shadow-lg shadow-orange-500/20 block"
+              >
+                Call Coach Clinton Now
+              </a>
+              <a
+                href="https://wa.me/256775342814"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full py-4 border border-stone-800 hover:border-stone-600 text-stone-300 font-medium text-center text-sm uppercase tracking-wider rounded-full transition-all duration-300 hover:bg-stone-900 block"
+              >
+                Chat On WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="py-12 bg-[#050505] border-t border-stone-900/80 text-xs text-stone-600"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0"
+      >
+        <div
+          class="font-cinzel font-bold text-stone-300 text-sm tracking-widest"
+        >
+          COACH CLINTON<span class="text-orange-500">.</span>
+        </div>
+
+        <p class="font-mono text-center sm:text-left">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Coach Clinton Swimming Teacher. All Rights Reserved.
+        </p>
+
+        <div class="flex items-center space-x-6">
+          <a
+            href="tel:0775342814"
+            class="hover:text-orange-500 transition-colors"
+            >0775342814</a
+          >
+          <span>•</span>
+          <a href="#about" class="hover:text-orange-500 transition-colors"
+            >Philosophy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization Script -->
+    <script>
+      lucide.createIcons({
+        attrs: {
+          "stroke-width": 1.5,
+        },
+      });
+    </script>
+  </body>
+</html>
